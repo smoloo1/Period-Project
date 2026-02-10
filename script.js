@@ -243,23 +243,6 @@ const createMobileMenu = () => {
 window.addEventListener('load', createMobileMenu);
 window.addEventListener('resize', createMobileMenu);
 
-// Form validation helper
-const validateForm = (form) => {
-    const requiredFields = form.querySelectorAll('[required]');
-    let isValid = true;
-    
-    requiredFields.forEach(field => {
-        if (!field.value || (field.type === 'radio' && !form.querySelector(`input[name="${field.name}"]:checked`))) {
-            isValid = false;
-            field.classList.add('invalid');
-        } else {
-            field.classList.remove('invalid');
-        }
-    });
-    
-    return isValid;
-};
-
 // Add validation styles
 const validationStyle = document.createElement('style');
 validationStyle.textContent = `

@@ -430,11 +430,6 @@ header {
     white-space: nowrap;
 }
 
-.evidence-badge:contains("Strong") {
-    background-color: #d4edda;
-    color: #155724;
-}
-
 .solution-card:has(.evidence-badge:contains("Strong")) .evidence-badge {
     background-color: #d4edda;
     color: #155724;
