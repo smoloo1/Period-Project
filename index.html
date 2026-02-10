@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Science-backed period pain education hub - understand your pain, explore solutions, and know when to seek care">
+    <title>Period Pain Hub - Understanding & Managing Menstrual Pain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Period Pain Hub</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#understanding">Understanding</a></li>
+                    <li><a href="#pain-profile">Pain Profile</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#red-flags">When to Seek Care</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Your Period Pain is Real. Let's Understand It Together.</h2>
+                <p class="lead">Science-backed information to help you understand why period pain happens, recognize your pain type, and find solutions that work for you.</p>
+                <div class="hero-cta">
+                    <a href="#understanding" class="btn btn-primary">Learn the Basics</a>
+                    <a href="#pain-profile" class="btn btn-secondary">Find Your Pain Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Understanding Period Pain Section -->
+        <section id="understanding" class="content-section">
+            <div class="container">
+                <h2>Understanding Period Pain</h2>
+                <p class="intro">Period pain is common, but that doesn't mean you have to suffer through it. Understanding why it happens is the first step to managing it effectively.</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Why Does Period Pain Happen?</h3>
+                        <p>During menstruation, your uterus produces chemicals called prostaglandins. These cause the uterine muscles to contract, helping shed the lining. Higher levels of prostaglandins mean stronger contractions and more pain.</p>
+                        <p>Think of it like this: your uterus is doing hard work, and those contractions can cause discomfort—similar to how your muscles might ache after exercise.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Primary vs. Secondary Pain</h3>
+                        <p><strong>Primary dysmenorrhea</strong> is pain from the period itself—those prostaglandin-driven contractions. It usually starts within a year or two of getting your first period.</p>
+                        <p><strong>Secondary dysmenorrhea</strong> is pain caused by an underlying condition like endometriosis, fibroids, or adenomyosis. This often develops later and may worsen over time.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>What's Normal?</h3>
+                        <p>Some discomfort during your period is common, but pain that disrupts your daily life—preventing you from work, school, or activities you enjoy—is not something you should have to accept.</p>
+                        <p>You deserve relief, and there are many evidence-based options to help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pain Profile Assessment Section -->
+        <section id="pain-profile" class="content-section bg-light">
+            <div class="container">
+                <h2>Find Your Pain Profile</h2>
+                <p class="intro">Understanding how your pain feels can help you find the right solutions. Select all that describe your experience:</p>
+                
+                <form id="pain-profile-form">
+                    <div class="pain-options">
+                        <label class="pain-option">
+                            <input type="checkbox" name="pain-type" value="cramping">
+                            <div class="option-content">
+                                <h4>Cramping</h4>
+                                <p>Squeezing, tight sensations in lower abdomen</p>
+                            </div>
+                        </label>
+
+                        <label class="pain-option">
+                            <input type="checkbox" name="pain-type" value="sharp">
+                            <div class="option-content">
+                                <h4>Sharp or Stabbing</h4>
+                                <p>Sudden, intense pain that comes and goes</p>
+                            </div>
+                        </label>
+
+                        <label class="pain-option">
+                            <input type="checkbox" name="pain-type" value="aching">
+                            <div class="option-content">
+                                <h4>Dull Aching</h4>
+                                <p>Persistent, heavy feeling in pelvis or lower back</p>
+                            </div>
+                        </label>
+
+                        <label class="pain-option">
+                            <input type="checkbox" name="pain-type" value="radiating">
+                            <div class="option-content">
+                                <h4>Radiating</h4>
+                                <p>Pain spreading to thighs, lower back, or hips</p>
+                            </div>
+                        </label>
+
+                        <label class="pain-option">
+                            <input type="checkbox" name="pain-type" value="bloating">
+                            <div class="option-content">
+                                <h4>Bloating & Pressure</h4>
+                                <p>Swollen feeling, pressure, or heaviness</p>
+                            </div>
+                        </label>
+
+                        <label class="pain-option">
+                            <input type="checkbox" name="pain-type" value="digestive">
+                            <div class="option-content">
+                                <h4>Digestive Discomfort</h4>
+                                <p>Nausea, diarrhea, or stomach upset</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="severity-section">
+                        <h4>Pain Severity</h4>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="mild" required>
+                            <div class="option-content">
+                                <strong>Mild</strong> - Noticeable but doesn't interfere with activities
+                            </div>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="moderate">
+                            <div class="option-content">
+                                <strong>Moderate</strong> - Affects concentration and some activities
+                            </div>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="severe">
+                            <div class="option-content">
+                                <strong>Severe</strong> - Prevents normal activities, work, or school
+                            </div>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Get Personalized Solutions</button>
+                </form>
+
+                <div id="profile-results" class="profile-results" style="display: none;">
+                    <h3>Your Pain Profile</h3>
+                    <div id="profile-summary"></div>
+                    <a href="#solutions" class="btn btn-primary">Explore Solutions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="content-section">
+            <div class="container">
+                <h2>Evidence-Based Solutions</h2>
+                <p class="intro">Solutions organized by how they work. Try what resonates with you, and remember: what works is individual.</p>
+
+                <div class="solutions-filters">
+                    <button class="filter-btn active" data-filter="all">All Solutions</button>
+                    <button class="filter-btn" data-filter="heat">Heat & Cold</button>
+                    <button class="filter-btn" data-filter="movement">Movement</button>
+                    <button class="filter-btn" data-filter="dietary">Dietary</button>
+                    <button class="filter-btn" data-filter="medical">Medical</button>
+                    <button class="filter-btn" data-filter="mind-body">Mind-Body</button>
+                </div>
+
+                <div class="solutions-grid">
+                    <!-- Heat & Cold Solutions -->
+                    <div class="solution-card" data-category="heat">
+                        <div class="solution-header">
+                            <h3>Heat Therapy</h3>
+                            <span class="evidence-badge">Strong Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Heat increases blood flow and relaxes uterine muscles, reducing cramping.</p>
+                        <ul class="solution-options">
+                            <li>Heating pad on lower abdomen (20-30 minutes)</li>
+                            <li>Warm bath or shower</li>
+                            <li>Heat wraps or patches</li>
+                        </ul>
+                        <p class="tip"><strong>Tip:</strong> Use during the first 1-2 days when cramps are typically strongest.</p>
+                    </div>
+
+                    <!-- Movement Solutions -->
+                    <div class="solution-card" data-category="movement">
+                        <div class="solution-header">
+                            <h3>Gentle Movement & Exercise</h3>
+                            <span class="evidence-badge">Strong Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Exercise releases endorphins (natural pain relievers) and improves circulation.</p>
+                        <ul class="solution-options">
+                            <li>Walking or light cardio</li>
+                            <li>Yoga (especially poses that open the hips)</li>
+                            <li>Stretching and gentle movement</li>
+                            <li>Swimming</li>
+                        </ul>
+                        <p class="tip"><strong>Tip:</strong> Even 15-20 minutes can help. Listen to your body—gentle movement is key.</p>
+                    </div>
+
+                    <div class="solution-card" data-category="movement">
+                        <div class="solution-header">
+                            <h3>Pelvic Floor Relaxation</h3>
+                            <span class="evidence-badge">Moderate Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Releases tension in pelvic muscles that can worsen cramping.</p>
+                        <ul class="solution-options">
+                            <li>Deep breathing exercises</li>
+                            <li>Pelvic floor physical therapy</li>
+                            <li>Child's pose and other relaxing stretches</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dietary Solutions -->
+                    <div class="solution-card" data-category="dietary">
+                        <div class="solution-header">
+                            <h3>Anti-Inflammatory Foods</h3>
+                            <span class="evidence-badge">Moderate Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Certain foods can help reduce inflammation and prostaglandin production.</p>
+                        <ul class="solution-options">
+                            <li>Omega-3 rich foods (fatty fish, walnuts, flaxseed)</li>
+                            <li>Fruits and vegetables high in antioxidants</li>
+                            <li>Ginger tea (has anti-inflammatory properties)</li>
+                            <li>Staying well-hydrated</li>
+                        </ul>
+                        <p class="tip"><strong>Tip:</strong> Consider reducing caffeine, alcohol, and high-sodium foods, which may worsen bloating.</p>
+                    </div>
+
+                    <div class="solution-card" data-category="dietary">
+                        <div class="solution-header">
+                            <h3>Magnesium</h3>
+                            <span class="evidence-badge">Moderate Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Magnesium helps relax muscles and may reduce prostaglandin production.</p>
+                        <ul class="solution-options">
+                            <li>Magnesium-rich foods (dark leafy greens, nuts, seeds)</li>
+                            <li>Magnesium supplements (discuss dosage with healthcare provider)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Medical Solutions -->
+                    <div class="solution-card" data-category="medical">
+                        <div class="solution-header">
+                            <h3>NSAIDs (Non-Steroidal Anti-Inflammatory Drugs)</h3>
+                            <span class="evidence-badge">Strong Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> NSAIDs block prostaglandin production, directly addressing the cause of primary period pain.</p>
+                        <ul class="solution-options">
+                            <li>Ibuprofen (Advil, Motrin)</li>
+                            <li>Naproxen (Aleve)</li>
+                        </ul>
+                        <p class="tip"><strong>Tip:</strong> Most effective when taken at the first sign of pain or even just before your period starts. Follow package directions and don't exceed recommended doses.</p>
+                    </div>
+
+                    <div class="solution-card" data-category="medical">
+                        <div class="solution-header">
+                            <h3>Hormonal Birth Control</h3>
+                            <span class="evidence-badge">Strong Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Thins the uterine lining, reducing prostaglandin production and lighter, less painful periods.</p>
+                        <ul class="solution-options">
+                            <li>Birth control pills</li>
+                            <li>Hormonal IUD</li>
+                            <li>Contraceptive patch or ring</li>
+                        </ul>
+                        <p class="tip"><strong>Tip:</strong> Requires a healthcare provider. Discuss options and potential side effects to find the right fit.</p>
+                    </div>
+
+                    <!-- Mind-Body Solutions -->
+                    <div class="solution-card" data-category="mind-body">
+                        <div class="solution-header">
+                            <h3>Relaxation Techniques</h3>
+                            <span class="evidence-badge">Moderate Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Stress can worsen pain perception. Relaxation helps manage stress and reduce muscle tension.</p>
+                        <ul class="solution-options">
+                            <li>Deep breathing exercises</li>
+                            <li>Progressive muscle relaxation</li>
+                            <li>Meditation or mindfulness</li>
+                            <li>Gentle yoga</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution-card" data-category="mind-body">
+                        <div class="solution-header">
+                            <h3>TENS (Transcutaneous Electrical Nerve Stimulation)</h3>
+                            <span class="evidence-badge">Moderate Evidence</span>
+                        </div>
+                        <p class="mechanism"><strong>How it works:</strong> Small electrical pulses may block pain signals and stimulate endorphin release.</p>
+                        <ul class="solution-options">
+                            <li>TENS units designed for period pain</li>
+                            <li>Can be used alongside other methods</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="solutions-note">
+                    <p><strong>Remember:</strong> Everyone's body is different. What works for others may not work for you, and that's okay. It may take some trial and error to find your best approach. Many people find that combining strategies works best.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Red Flags Section -->
+        <section id="red-flags" class="content-section bg-alert">
+            <div class="container">
+                <h2>When to Seek Medical Care</h2>
+                <p class="intro">While period pain is common, certain symptoms warrant professional evaluation. You know your body best—trust your instincts.</p>
+
+                <div class="red-flags-grid">
+                    <div class="flag-card urgent">
+                        <h3>🚨 Seek Care Soon If:</h3>
+                        <ul>
+                            <li>Pain is <strong>severe and doesn't respond</strong> to over-the-counter medication</li>
+                            <li>Pain <strong>prevents you from</strong> working, going to school, or doing normal activities</li>
+                            <li>Pain has <strong>gotten significantly worse</strong> over time</li>
+                            <li>Pain <strong>occurs between periods</strong> or during ovulation</li>
+                            <li>You have <strong>very heavy bleeding</strong> (soaking through a pad/tampon every 1-2 hours)</li>
+                            <li>You experience <strong>pain during sex</strong> or bowel movements</li>
+                            <li>You have <strong>difficulty getting pregnant</strong> along with painful periods</li>
+                        </ul>
+                    </div>
+
+                    <div class="flag-card immediate">
+                        <h3>⚠️ Seek Immediate Care If:</h3>
+                        <ul>
+                            <li><strong>Sudden, severe pain</strong> that feels different from your usual cramps</li>
+                            <li><strong>Fever</strong> with pelvic pain (could indicate infection)</li>
+                            <li><strong>Dizziness, fainting,</strong> or feeling very unwell</li>
+                            <li><strong>Pregnancy is possible</strong> and you have severe pain or unusual bleeding</li>
+                        </ul>
+                    </div>
+
+                    <div class="flag-card proactive">
+                        <h3>✓ Good Reasons to Talk to a Healthcare Provider:</h3>
+                        <ul>
+                            <li>You want to explore <strong>more treatment options</strong></li>
+                            <li>Over-the-counter solutions <strong>aren't providing enough relief</strong></li>
+                            <li>You want to discuss <strong>hormonal birth control</strong> for pain management</li>
+                            <li>You're concerned about an <strong>underlying condition</strong> (like endometriosis or PCOS)</li>
+                            <li>Your pain pattern has <strong>changed</strong></li>
+                            <li>You simply want <strong>professional guidance</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="care-tips">
+                    <h3>Preparing for Your Appointment</h3>
+                    <p>Tracking your symptoms can help your healthcare provider understand your experience:</p>
+                    <ul>
+                        <li>When pain occurs (day of cycle, duration)</li>
+                        <li>Type and severity of pain</li>
+                        <li>What helps and what doesn't</li>
+                        <li>Impact on daily activities</li>
+                        <li>Any other symptoms (digestive issues, fatigue, etc.)</li>
+                    </ul>
+                    <p><strong>Advocacy tip:</strong> If you feel dismissed, it's okay to seek a second opinion or ask for specific evaluations. Your pain is real and deserves proper attention.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About This Resource</h4>
+                    <p>Evidence-based information to help you understand and manage period pain. This site is educational and not a substitute for medical advice.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#understanding">Understanding Pain</a></li>
+                        <li><a href="#pain-profile">Pain Profile</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#red-flags">When to Seek Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Important Note</h4>
+                    <p>This information is based on current medical evidence but should not replace consultation with healthcare providers. Always discuss significant symptoms with a medical professional.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Period Pain Hub. Created with care to support menstrual health education.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
